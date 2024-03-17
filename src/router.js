@@ -36,10 +36,13 @@ router.post('/chat/completions', async (request) => {
 			return json(selectedTools);
 		} else {
 			if (messages[messages.length - 1].role === 'tool') {
-				const content =
-					`The tool's result after functions are called is\n\n` +
-					`"""\n${msg.content}\n"""\n\n` +
-					`Use the result to answer the user's last question`;
+				const message = messages[messages.length - 1];
+				const content = `The tool's result after functions are called is
+"""
+${message.content}
+"""
+
+Use the result to answer the user's last question`;
 
 				const fixedMessages = messages.map((msg) => {
 					if (msg.role === 'tool') {
