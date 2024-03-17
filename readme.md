@@ -2,6 +2,8 @@
 
 Habilis is a proxy server built using Cloudflare Workers that enables an AI model to call functions as if it had the ability to execute code. With Habilis, you can enable your AI model to perform complex tasks by making API calls to external services, all while keeping your application's logic and data secure.
 
+Habilis is inspired by [GroqCall.ai](https://funckycall.ai/), a proxy server that provides function calls for Groq's lightning-fast Language Processing Unit (LPU) and other AI providers. We built Habilis to provide a similar functionality using Cloudflare Workers, a fast, secure, and scalable infrastructure for handling API requests and responses.
+
 ## Features
 
 - **Function Calling Abilities:** Habilis enables your AI model to call external functions and retrieve the results, allowing you to extend its capabilities beyond its initial training.
@@ -17,3 +19,7 @@ To get started with Habilis, follow these steps:
 3. **Deploy Habilis:** Deploy the code in this repository to your Cloudflare Workers account using the Cloudflare Workers CLI or the web interface.
 4. **Configure your AI model:** Update your AI model's configuration to use the Habilis API endpoint as its function-calling endpoint.
 5. **Test your AI model:** Test your AI model to ensure that it can call external functions using the Habilis API.
+
+## Tribute
+
+Habilis is inspired by [GroqCall.ai](https://funckycall.ai/), a proxy server that provides function calls for Groq's lightning-fast Language Processing Unit (LPU) and other AI providers. We built Habilis to provide a similar functionality using Cloudflare Workers, a fast, secure, and scalable infrastructure for handling API requests and responses.
